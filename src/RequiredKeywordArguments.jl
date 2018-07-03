@@ -6,7 +6,7 @@ type RequiredKeywordArgumentError <: Exception
     reason
 end
 function Base.showerror(io::IO, e::RequiredKeywordArgumentError)
-    text = "RequiredKeywordArgumentError: $(e.varname) is a required keyword argument, please provide '$(e.varname) = ...'."
+    text = "RequiredKeywordArgumentError: `$(e.varname)` is a required keyword argument, please provide `$(e.varname) = ...`."
     if !isempty(e.reason)
         text *= " $(e.reason)"
     end
