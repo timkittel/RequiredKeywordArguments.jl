@@ -14,12 +14,8 @@ using RequiredKeywordArguments
 @rka f(;y) = y^2
 
 ```
-is simply equivalent to
-
+declares `y` to be a required keyword argument. That means
 ```Julia
-using RequiredKeywordArguments
-
-f(;y=RequiredKeywordArguments("y")) = y^2
-
+f(y=2) # 4 # works
+f() # RequiredKeywordArgumentError: a is a required keyword argument, please provide 'a = ...'.
 ```
-which throws an error if you do not provide an argument for `y`.
