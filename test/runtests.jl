@@ -28,6 +28,7 @@ try
     h(x=2)
 catch e
     @test isa(e, RequiredKeywordArgumentError)
+    Base.showerror(Base.STDOUT, e)
 end
 
 k(;y=RequiredKeywordArgument("y", "I can't compute `k` without `y`.")) = 3*y
@@ -36,6 +37,7 @@ try
 catch e
     @test isa(e, RequiredKeywordArgumentError)
     @test e.reason == "I can't compute `k` without `y`."
+    Base.showerror(Base.STDOUT, e)
 end
 l(;y=RequiredKeywordArgument("y", reason="I can't compute `l` without `y`.")) = 4*y
 try
