@@ -43,6 +43,6 @@ macro rka(func)
     return esc(func)
 end
 
-export RequiredKeywordArgument, rka, @rka, RequiredKeywordArgumentError
+export RequiredKeywordArgument, RKA, @rka, RequiredKeywordArgumentError
 
 end # module RequiredKeywordArguments
