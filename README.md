@@ -19,7 +19,7 @@ is simply equivalent to
 ```Julia
 using RequiredKeywordArguments
 
-f(;y=RequiredKeywordArguments("y") = y^2
+f(;y=RequiredKeywordArguments("y")) = y^2
 
 ```
-which throws an error if you do not provide an argument for y.
+which throws an error if you do not provide an argument for `y`.
