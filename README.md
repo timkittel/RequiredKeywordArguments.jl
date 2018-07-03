@@ -17,5 +17,5 @@ using RequiredKeywordArguments
 declares `y` to be a required keyword argument. That means
 ```Julia
 f(y=2) # 4 # works
-f() # RequiredKeywordArgumentError: a is a required keyword argument, please provide 'a = ...'.
+f() # RequiredKeywordArgumentError: `y` is a required keyword argument, please provide `y = ...`.
 ```
