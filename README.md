@@ -1,3 +1,6 @@
+![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg) This is a (feature in Julia >=0.7)[https://github.com/JuliaLang/julia/blob/master/NEWS.md] and was (merged into Compat.jl)[https://github.com/JuliaLang/Compat.jl/pull/586] for earlier Julia versions.
+
+
 # RequiredKeywordArguments
 
 [![Build Status](https://travis-ci.org/timkittel/RequiredKeywordArguments.jl.svg?branch=master)](https://travis-ci.org/timkittel/RequiredKeywordArguments.jl)
